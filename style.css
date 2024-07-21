@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "poppins";
+  background-color: #000000;
+  color: #f9f9f9;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 12px 5px #111 inset;
+  text-align: center;
+  padding: 1%;
+}
+main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.stopwatch-body {
+  position: relative;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 100%;
+  border: #333 solid 1px;
+  margin-bottom: 5vh;
+  margin-top: 10vh;
+  box-shadow: 0 0 12px 5px #111 inset;
+  align-self: center;
+}
+
+.stopwatch-inner-body {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-container button {
+  margin: 1%;
+  padding: 10px 20px;
+  border: #333 solid 1px;
+  background-color: transparent;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+.btn-container button:hover {
+  background-color: #333;
+}
+
+.stopwatch-inner-body span {
+  margin-right: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.stopwatch-inner-body #milliseconds {
+  margin-left: 2px;
+  font-size: 32px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+.footer i {
+  margin: 0.5rem;
+}
+.footer .social {
+  text-align: center;
+}
+.social i {
+  font-size: 24px;
+  color: #fff;
+}
